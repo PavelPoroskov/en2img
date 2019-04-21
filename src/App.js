@@ -25,25 +25,26 @@ import theme from "./theme";
 // };
 //                 <Grid style={style.child} />
 //                <SelectedPicture style={style.child} />
+//        <ThemeProvider theme={theme}>
+//          <Container maxWidth="sm">
+//            <Box my={4}>
 
 //@observer
 export class App extends React.Component {
   render() {
     return (
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Container maxWidth="sm">
-          <Box my={4}>
-            <Provider {...stores}>
-              <React.Fragment>
-                <Form />
-                <Grid />
-                <SelectedPicture />
-              </React.Fragment>
-            </Provider>
-          </Box>
-        </Container>
-      </ThemeProvider>
+      <Provider {...stores}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Container>
+            <Box>
+              <Form />
+              <Grid />
+              <SelectedPicture />
+            </Box>
+          </Container>
+        </ThemeProvider>
+      </Provider>
     );
   }
 }
