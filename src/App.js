@@ -13,30 +13,25 @@ import Box from "@material-ui/core/Box";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
+// import { withStyles } from "@material-ui/styles";
 
-// const style = {
-//   cont: {
-//     width: "100%",
-//     margin: "auto"
+// const styles = {
+//   box: {
+//     overflow: 'scroll',
 //   },
-//   child: {
-//     float: "left"
-//   }
 // };
-//                 <Grid style={style.child} />
-//                <SelectedPicture style={style.child} />
-//        <ThemeProvider theme={theme}>
-//          <Container maxWidth="sm">
-//            <Box my={4}>
 
 //@observer
-export class App extends React.Component {
+//@withStyles(styles)
+class App extends React.Component {
   render() {
+    const classes = this.props.classes;
+
     return (
       <Provider {...stores}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <Container>
+          <Container maxWidth={false}>
             <Box>
               <Form />
               <Grid />
@@ -47,6 +42,10 @@ export class App extends React.Component {
       </Provider>
     );
   }
+}
+
+export {
+  App
 }
 
 ReactDOM.render(<App />, document.getElementById("app"));

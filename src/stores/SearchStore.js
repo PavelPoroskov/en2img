@@ -6,6 +6,10 @@ export default class SearchStore{
 
     constructor(model){
         this.model = model;
+
+        //testing
+        this.changeSearchTerm('cat')
+        this.requestPics()
     }
 
     @computed get url(){

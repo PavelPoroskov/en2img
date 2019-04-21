@@ -15,7 +15,8 @@ const styles = {
   },
   gridList: {
     width: "100%",
-    overflowY: "auto"
+    overflowY: "auto",
+    //margin: '-2.5px'
   },
   chip: {
     margin: "5px"
@@ -36,7 +37,7 @@ class Grid extends React.Component {
     return (
       <div className={classes.root}>
         <Chip label={`total images: ${photoGallery.totalPics}`} className={classes.chip} />
-        <GridList cellHeight={180} cols={3} padding={5} className={classes.gridList}>
+        <GridList cellHeight={180} cols={3} spacing={5} className={classes.gridList}>
           {tiles}
         </GridList>
       </div>

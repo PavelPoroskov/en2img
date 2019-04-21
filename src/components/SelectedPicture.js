@@ -10,8 +10,18 @@ const styles = {
     width: "50%",
     margin: 0,
     float: "left",
-    overflow: "hidden"
+    overflow: "hidden",
     //height: '100vh'
+    height: '90vh',
+    display: 'flex',
+    'justify-items': 'center',
+    'align-items': 'start',
+    //'align-items': 'center',
+    
+//     position: '-webkit-sticky',
+//     position: 'sticky', 
+// //    top: '10vh',
+//     top: '50px',
   },
   media: {
     height: "100vh",
@@ -23,8 +33,15 @@ const styles = {
     "background-position": "top center"
   },
   img: {
-    width: "100%",
-    height: "auto"
+    //width: "100%",
+    //height: "auto",
+//    'max-height': '90vh',
+    'object-fit': 'contain',
+    width: '100%',
+    height: '100%',
+    flex: 1,
+    //'object-position': 'center top',
+    //'max-height': '100%',
   }
 };
 
@@ -53,7 +70,7 @@ class SelectedPicture extends React.Component {
     // );
     return (
       <div className={classes.card}>
-        <img src={url} className={classes.img} />
+        {url ? <img src={url} className={classes.img} /> : null }
       </div>
     );
   }
