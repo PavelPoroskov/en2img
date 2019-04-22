@@ -1,14 +1,18 @@
 # en2img
 
+Show images for a word. 
+
+Demo https://github.com/PavelPoroskov/en2img
+
 from
 https://github.com/Apress/front-end-reactive-architectures/tree/master/9781484231791      Ch5_examples/photo-explorer-mobx
 
-update versions (material-ui, react, babel, mobx)
+update versions (material-ui, react, babel, mobx, webpack)
 
 
 TODO:
 =====
-deploy over github pages
+~~deploy over github pages~~
 
 search form
 	search after enter
@@ -29,8 +33,8 @@ responsive
 		sm: column 1 + selected image
 		em: grid under selected image
 
-from github found vulnarability webpack-dev-server
-go to webpack 4
+~~from github found vulnarability webpack-dev-server~~
+~~go to webpack 4~~
 
 new functions
 -------------
