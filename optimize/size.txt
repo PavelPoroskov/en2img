@@ -1,0 +1,50 @@
+
+//webpack
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  App.js (349 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (349 KiB)
+      App.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+
+
+
+NODE_ENV=production BABEL_ENV=production ./node_modules/.bin/webpack --json -p | webpack-bundle-size-analyzer > optimize/size.txt
+
+mobx: 171.44 KB (18.3%)
+react-dom: 106.96 KB (11.4%)
+jss: 52.61 KB (5.61%)
+@material-ui/system: 22.07 KB (2.36%)
+react-transition-group: 15.74 KB (1.68%)
+@material-ui/core: 12.05 KB (1.29%)
+@babel/runtime: 8.25 KB (0.881%)
+react: 6.86 KB (0.732%)
+@material-ui/utils: 5.37 KB (0.574%)
+process: 5.29 KB (0.565%)
+react-event-listener: 5.19 KB (0.554%)
+scheduler: 5.08 KB (0.542%)
+@material-ui/styles: 3.35 KB (0.358%)
+deepmerge: 3.05 KB (0.325%)
+hoist-non-react-statics: 2.82 KB (0.301%)
+prop-types: 2.58 KB (0.276%)
+react-is: 2.48 KB (0.264%)
+object-assign: 2.06 KB (0.220%)
+debounce: 1.8 KB (0.192%)
+warning: 1.73 KB (0.185%)
+dom-helpers: 1.5 KB (0.160%)
+is-plain-object: 856 B (0.0892%)
+is-in-browser: 510 B (0.0532%)
+webpack: 472 B (0.0492%)
+tiny-warning: 361 B (0.0376%)
+isobject: 288 B (0.0300%)
+<self>: 496.29 KB (53.0%)
+
+Note: The file sizes are calculated before minification, and might not reflect the real file sizes in the production bundle.

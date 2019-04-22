@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+//const CompressionPlugin = require('compression-webpack-plugin');
+// need tune web-server
 
 module.exports = {
   mode: 'production',
@@ -23,6 +25,7 @@ module.exports = {
   plugins: [
       new CopyWebpackPlugin([
         { from: './index.html' }
-      ])
+      ]),
+      // new CompressionPlugin()
   ]
 }

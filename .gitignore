@@ -1,3 +1,5 @@
+optimize/*.json
+
 # Logs
 logs
 *.log
