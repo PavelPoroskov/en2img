@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/App.js',
   output: {
     filename: 'App.js',
