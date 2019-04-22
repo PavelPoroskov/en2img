@@ -20,11 +20,11 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@babel/core": "latest",
+    "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/plugin-proposal-decorators": "^7.4.0",
-    "babel-core": "latest",
-    "babel-loader": "latest",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
     "babel-preset-react-app": "^7.0.2",
     "copy-webpack-plugin": "^4.0.1",
     "webpack": "^3.6.0",
