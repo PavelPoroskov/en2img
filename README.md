@@ -6,8 +6,37 @@ https://github.com/Apress/front-end-reactive-architectures/tree/master/978148423
 update versions (material-ui, react, babel)
 
 
+TODO:
+=====
+deploy over github pages
 
-want
+search form
+	search after enter
+	spiner size not compare button
+
+chip with "total images 21" jump on every search (course spiner size?)
+
 selected image: 
 	sticky on scroll
 	align top
+
+	option: card with background image, or image
+
+responsive
+	grid:
+		el, la: column + selected image3, 
+		mi: column 2 + selected image, 
+		sm: column 1 + selected image
+		em: grid under selected image
+
+
+new functions
+-------------
+history of search: fox, cat, dog
+save selected image for every seach
+view history as dictionary with image
+sound word when on over image
+
+
+use
+google translate for sound
