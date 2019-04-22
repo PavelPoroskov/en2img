@@ -3,7 +3,7 @@
 from
 https://github.com/Apress/front-end-reactive-architectures/tree/master/9781484231791      Ch5_examples/photo-explorer-mobx
 
-update versions (material-ui, react, babel)
+update versions (material-ui, react, babel, mobx)
 
 
 TODO:
@@ -29,6 +29,8 @@ responsive
 		sm: column 1 + selected image
 		em: grid under selected image
 
+from github found vulnarability webpack-dev-server
+go to webpack 4
 
 new functions
 -------------
