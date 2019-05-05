@@ -46,3 +46,5 @@ sound word when on over image
 
 use
 google translate for sound
+
+cow => cow, crown, crow (ressembled words with pictures and pronounce on hover)
