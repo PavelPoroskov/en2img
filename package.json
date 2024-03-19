@@ -4,36 +4,35 @@
   "description": "",
   "main": "src/App.js",
   "homepage": "http://PavelPoroskov.github.io/en2img",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_ENV=production BABEL_ENV=production ./node_modules/.bin/webpack && npm run start",
-    "start": "NODE_ENV=development BABEL_ENV=development ./node_modules/.bin/webpack-dev-server --open --compress --port 8081 --config webpack.config.dev.js",
-    "build": "NODE_ENV=production BABEL_ENV=production ./node_modules/.bin/webpack --env.production -p --compress",
+    "dev": "vite",
+    "build": "vite build --base /en2img",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "author": "pavel poroskov",
   "dependencies": {
-    "@material-ui/core": "^4.0.1",
-    "@material-ui/styles": "^4.0.1",
-    "mobx": "^5.9.4",
-    "mobx-react": "^5.4.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.14",
+    "@mui/styles": "^5.15.14",
+    "mobx": "^6.12.0",
+    "mobx-react": "^9.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/plugin-proposal-decorators": "^7.4.4",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-preset-react-app": "^9.0.0",
-    "compression-webpack-plugin": "^2.0.0",
-    "copy-webpack-plugin": "^5.0.3",
-    "gh-pages": "^2.0.1",
-    "webpack": "^4.32.2",
-    "webpack-bundle-analyzer": "^3.3.2",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.1"
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.1.6"
   }
 }

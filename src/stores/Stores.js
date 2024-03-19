@@ -1,7 +1,7 @@
 import PhotoGalleryStore from "./PhotoGalleryStore";
 import SearchStore from "./SearchStore";
 import SelectedPictureStore from "./SelectedPictureStore";
-import Model from "../models/GalleryModel";
+import Model from "./GalleryModel";
 
 const model = new Model();
 const photoGallery = new PhotoGalleryStore(model);

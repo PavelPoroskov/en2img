@@ -1,19 +1,24 @@
-import {observable, computed, action, autorun} from 'mobx'
+import { makeObservable, computed, action } from 'mobx'
 
 export default class PhotoGalleryStore {
-    constructor(model){
-        this.model = model;
-    }
+  constructor(model){
+    this.model = model;
+    makeObservable(this, { 
+      pics: computed, 
+      totalPics: computed, 
+      selectedPicture: action 
+    })
+  }
 
-    @computed get pics(){
-        return this.model.picsList
-    }
+  get pics(){
+    return this.model.picsList
+  }
 
-    @computed get totalPics(){
-        return this.model.picsList.length;
-    }
+  get totalPics(){
+    return this.model.picsList.length;
+  }
 
-    @action selectedPicture(url){
-        this.model.selectedPictureURL = url;
-    }
+  selectedPicture(url){
+    this.model.selectedPictureURL = url;
+  }
 }

@@ -1,11 +1,14 @@
-import {computed, action} from 'mobx';
+import { makeObservable, computed } from 'mobx';
 
 export default class SelectedPictureStore{
-    constructor(model){
-        this.model = model;
-    }
+  constructor(model){   
+    this.model = model;
+    makeObservable(this, {
+      picPath: computed,
+    })
+  }
 
-    @computed get picPath(){
-        return this.model.selectedPictureURL || ""
-    }
+  get picPath(){
+    return this.model.selectedPictureURL || ""
+  }
 }
