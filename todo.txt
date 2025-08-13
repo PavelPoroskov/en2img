@@ -1,0 +1,20 @@
+
+1) search field. on Enter update list
+
+2) ?big image alight with top of grid of small images
+
+2) grid (small images) size from screen size
+
+3) ?pagination
+
+4) change layout: 
+    small images on right, big image on left
+    big image on top, small images on bottom
+
+5) decorator support
+
+5) search history
+    remember selected images for search
+        penguin -> pic for penguin
+        cat -> 
+
